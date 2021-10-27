@@ -11,10 +11,10 @@ body {
 
     background: #ecfaff;
 
-    transition: margin-left 1s;
+    transition: margin-left 0.5s;
 }
-
-#main {
+#wrap section {
+    float: left;
     width: 100vw;
     height: 100vh;
 
@@ -24,20 +24,27 @@ body {
     display: flex;
     flex-direction: column;
 }
+#wrap section h1 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(41, 128, 185);
+}
+
+
+/* main */
 #main h1 {
-    margin-top: 10%;
+    margin-top: 50px;
 
     font-family: 'Rampart One', sans-serif;
     font-size: 70px;
     text-align: center;
-    line-height: 65px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(41, 128, 185);
+    line-height: 0.9;
     flex-grow: 1;
 }
 #main .inner {
     position: relative;
-    width: 100%;
+    width: 370px;
+    left: 50%;
+    transform: translate(-50%, 0);
     
     padding: 50px;
     box-sizing: border-box;
@@ -45,7 +52,7 @@ body {
     background: #fff;
     border-radius: 50px;
 
-    flex-grow: 5;
+    flex-grow: 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 5px 10px rgb(211, 237, 255);
@@ -74,4 +81,186 @@ body {
 
     font-weight: bold;
     color: #aaa;
+}
+
+
+/* menu */
+#menu h1 {
+    margin-top: 40px;
+
+    font-family: 'Rampart One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    flex-grow: 1;
+}
+#menu .inner {
+    position: relative;
+    width: 370px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    padding: 100px 50px;
+    box-sizing: border-box;
+
+    background: #fff;
+    border-radius: 50px;
+
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgb(211, 237, 255);
+}
+#menu .inner .btn_back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+    
+    background: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 0px 5px 10px rgb(211, 237, 255);
+}
+#menu .inner .btn_back:active svg {
+    transform: scale(0.9);
+}
+#menu .inner .btn_back svg {
+    width: 50px;
+    height: 50px;
+}
+#menu .inner select {
+    margin-bottom: 20px;
+    height: 40px;
+
+    background: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+#menu.all .inner select {
+    display: none;
+}
+#menu .inner div {
+    margin-bottom: 20px;
+}
+#menu .inner div span:nth-of-type(1) {
+    float: left;
+
+    width: 200px;
+
+    background: #eee;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+#menu .inner div span:nth-of-type(2) {
+    float: right;
+    height: 40px;
+}
+#menu .inner div span svg{
+    width: 40px;
+    height: 40px;
+}
+#menu .inner .iput_count_exam input {
+    margin-bottom: 3px;
+
+    width: 270px;
+    height: 40px;
+
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+#menu .inner .iput_count_exam p {
+    color: #666;
+    font-size: 11px;
+    text-align: right;
+}
+#menu .inner .btn_start {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -120px;
+
+    width: 240px;
+    height: 50px;
+
+    background: #3498db;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 5px 10px rgb(26, 116, 175);
+}
+#menu .inner .btn_start:active {
+    transform: scale(0.95)
+}
+
+
+/* exam */
+#exam h1 {
+    margin-top: 40px;
+
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-family: 'Rampart One', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    line-height: 1;
+    flex-grow: 1;
+}
+#exam .inner {
+    position: relative;
+    width: 370px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    padding: 50px 30px;
+    box-sizing: border-box;
+
+    background: #fff;
+    border-radius: 50px;
+
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgb(211, 237, 255);
+}
+#exam .inner p {
+    margin-bottom: 50px;
+
+    height: 200px;
+}
+#exam .inner input {
+    width: 220px;
+    height: 40px;
+
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+#exam .inner button {
+    float: right;
+
+    width: 70px;
+    height: 40px;
+
+    background: #3498db;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+#exam .inner button:active {
+    transform: scale(0.95);
 }
