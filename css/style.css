@@ -5,7 +5,7 @@ body {
     overflow: hidden;
 }
 #wrap {
-    width: 300%;
+    width: 400%;
     height: 100vh;
     margin-left: 0;
 
@@ -214,8 +214,9 @@ body {
 
 /* exam */
 #exam h1 {
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin: 40px auto 70px auto;
+
+    width: 370px;
 
     padding-left: 50px;
     box-sizing: border-box;
@@ -293,5 +294,75 @@ body {
     color: #fff;
 }
 #exam .inner button:active {
+    transform: scale(0.95);
+}
+#exam .inner .isWrongAnswer svg {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 200px;
+    height: 200px;
+
+    display: none;
+}
+#exam .inner .isWrongAnswer svg.on {
+    display: block;
+}
+
+
+
+/* result */
+#result h1 {
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    box-sizing: border-box;
+    font-family: 'Rampart One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+}
+#result .inner {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    width: 370px;
+    height: 500px;
+    
+    padding: 50px 30px;
+    box-sizing: border-box;
+
+    background: #fff;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgb(211, 237, 255);
+}
+#result .inner p {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+}
+#result .inner button {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -120px;
+
+    width: 240px;
+    height: 50px;
+
+    background: #3498db;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 5px 10px rgb(26, 116, 175);
+}
+#result .inner button:active {
     transform: scale(0.95);
 }
