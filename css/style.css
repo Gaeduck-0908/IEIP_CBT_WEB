@@ -33,18 +33,19 @@ body {
 /* main */
 #main h1 {
     margin-top: 50px;
+    margin-bottom: 80px;
 
     font-family: 'Rampart One', sans-serif;
     font-size: 70px;
     text-align: center;
     line-height: 0.9;
-    flex-grow: 1;
 }
 #main .inner {
     position: relative;
-    width: 370px;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 370px;
+    height: 330px;
     
     padding: 50px;
     box-sizing: border-box;
@@ -52,7 +53,6 @@ body {
     background: #fff;
     border-radius: 50px;
 
-    flex-grow: 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 5px 10px rgb(211, 237, 255);
@@ -87,18 +87,20 @@ body {
 /* menu */
 #menu h1 {
     margin-top: 40px;
+    margin-bottom: 70px;
 
     font-family: 'Rampart One', sans-serif;
     font-size: 40px;
     text-align: center;
     line-height: 1;
-    flex-grow: 1;
 }
 #menu .inner {
     position: relative;
-    width: 370px;
-    left: 50%;
+    left: 50%;;
     transform: translate(-50%, 0);
+
+    width: 370px;
+    height: 500px;
     
     padding: 100px 50px;
     box-sizing: border-box;
@@ -106,7 +108,6 @@ body {
     background: #fff;
     border-radius: 50px;
 
-    flex-grow: 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 5px 10px rgb(211, 237, 255);
@@ -122,7 +123,7 @@ body {
     background: none;
     border: none;
     border-radius: 50%;
-    box-shadow: inset 0px 5px 10px rgb(211, 237, 255);
+    box-shadow: 0px 5px 10px rgb(211, 237, 255);
 }
 #menu .inner .btn_back:active svg {
     transform: scale(0.9);
@@ -147,6 +148,9 @@ body {
 #menu .inner div {
     margin-bottom: 20px;
 }
+#menu .inner div:hover {
+    cursor: pointer;
+}
 #menu .inner div span:nth-of-type(1) {
     float: left;
 
@@ -165,6 +169,11 @@ body {
 #menu .inner div span svg{
     width: 40px;
     height: 40px;
+
+    display: none;
+}
+#menu .inner div span svg.on {
+    display: block;
 }
 #menu .inner .iput_count_exam input {
     margin-bottom: 3px;
@@ -206,6 +215,7 @@ body {
 /* exam */
 #exam h1 {
     margin-top: 40px;
+    margin-bottom: 70px;
 
     padding-left: 50px;
     box-sizing: border-box;
@@ -213,13 +223,14 @@ body {
     font-size: 40px;
     text-align: left;
     line-height: 1;
-    flex-grow: 1;
 }
 #exam .inner {
     position: relative;
-    width: 370px;
     left: 50%;
     transform: translate(-50%, 0);
+    
+    width: 370px;
+    height: 500px;
     
     padding: 50px 30px;
     box-sizing: border-box;
@@ -227,12 +238,32 @@ body {
     background: #fff;
     border-radius: 50px;
 
-    flex-grow: 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 5px 10px rgb(211, 237, 255);
 }
+#exam .inner .btn_back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+    
+    background: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgb(211, 237, 255);
+}
+#exam .inner .btn_back:active svg {
+    transform: scale(0.9);
+}
+#exam .inner .btn_back svg {
+    width: 50px;
+    height: 50px;
+}
 #exam .inner p {
+    margin-top: 30px;
     margin-bottom: 50px;
 
     height: 200px;
@@ -249,7 +280,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
-#exam .inner button {
+#exam .inner div button {
     float: right;
 
     width: 70px;

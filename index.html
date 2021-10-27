@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <script defer src="js/script.js"></script>
+    <script src="data/SQLD.json"></script>
     <title>CBT to Web!</title>
 </head>
 <body>
@@ -30,14 +31,16 @@
                     </svg>
                 </button>
                 <select id="select">
-                    <option>테스트 과목</option>
                 </select>
                 
                 <div class="check_wrong_exam">
                     <span>틀린 문제 다시 풀기</span>
                     <span>
-                        <svg viewBox="4 4 40 40">
+                        <svg viewBox="4 4 40 40" class="on">
                             <path d="M38 10v28H10V10h28m0-4H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4z" fill="#3498db"></path>
+                        </svg>
+                        <svg viewBox="4 4 40 40">
+                            <path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM20 34L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z" fill="#3498db"></path>
                         </svg>
                     </span>
                 </div>
@@ -45,15 +48,18 @@
                 <div class="check_all_exam">
                     <span>모든 문제 풀기</span>
                     <span>
-                        <svg viewBox="4 4 40 40">
+                        <svg viewBox="4 4 40 40" class="on">
                             <path d="M38 10v28H10V10h28m0-4H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4z" fill="#3498db"></path>
+                        </svg>
+                        <svg viewBox="4 4 40 40">
+                            <path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM20 34L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z" fill="#3498db"></path>
                         </svg>
                     </span>
                 </div>
                 
                 <div class="iput_count_exam">
-                    <input type="number">
-                    <p>해당 과목의 총 문제는 0개 입니다.</p>
+                    <input type="number" value="1">
+                    <p>총 0 문제 입니다.</p>
                 </div>
                 
                 <button class="btn_start">시작</button>
@@ -62,7 +68,12 @@
         <section id="exam">
             <h1>Q.1</h1>
             <div class="inner">
-                <p>테스트 문제 테스트 문제 테스트 문제 테스트 문제</p>
+                <button class="btn_back">
+                    <svg viewBox="2 2 30 30">
+                        <path d="M 20.2,9.804c-0.39-0.39-1.024-0.39-1.414,0L 12.3,16.29C 12.104,16.486, 12.008,16.742, 12.008,17 c0,0.258, 0.096,0.514, 0.292,0.71l 6.486,6.486c 0.39,0.39, 1.024,0.39, 1.414,0c 0.39-0.39, 0.39-1.024,0-1.414L 14.418,17 L 20.2,11.218C 20.59,10.828, 20.59,10.194, 20.2,9.804zM 17,2C 8.716,2, 2,8.716, 2,17S 8.716,32, 17,32S 32,25.284, 32,17S 25.284,2, 17,2z M 17,30 C 9.832,30, 4,24.168, 4,17S 9.832,4, 17,4S 30,9.832, 30,17S 24.168,30, 17,30z" fill="#3498db"></path>
+                    </svg>
+                </button>
+                <p></p>
                 <div>
                     <input type="text">
                     <button>확인</button>
