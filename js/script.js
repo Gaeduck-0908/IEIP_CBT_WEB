@@ -39,6 +39,7 @@ function shuffle(a) {
 // ==================== Main ====================
 const all_exam_btn = document.querySelector("#main .inner .all_exam_btn");
 const count_exam_btn = document.querySelector("#main .inner .count_exam_btn");
+const menu_title = document.querySelector("#menu h1");
 
 
 // functions
@@ -56,6 +57,7 @@ function setText(count) {
 // 전체 과목 문제 풀기
 all_exam_btn.addEventListener("click", () => {
     setScreen(1);
+    menu_title.innerText = "전체 과목 문제 풀기";
     menu.classList.add("all");
     is_exam_type = 0;
 
@@ -71,6 +73,7 @@ all_exam_btn.addEventListener("click", () => {
 // 선택 과목 문제 풀기
 count_exam_btn.addEventListener("click", () => {
     setScreen(1);
+    menu_title.innerText = "선택 과목 문제 풀기";
     menu.classList.remove("all");
     is_exam_type = 1;
 
