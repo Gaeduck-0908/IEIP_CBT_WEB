@@ -4,7 +4,9 @@ const select_box = document.querySelector("#menu .inner #select");
 const menu = document.querySelector("#menu");
 const text = document.querySelector("#menu .inner .iput_count_exam p");
 
-let datas = data;
+const strData = JSON.stringify(data);
+
+let datas = JSON.parse(strData);
 
 let is_exam_type; // 0: 전체 과목 | 1: 선택 과목
 let is_wrong_exam = false;
@@ -57,6 +59,7 @@ function setText(count) {
 // 전체 과목 문제 풀기
 all_exam_btn.addEventListener("click", () => {
     setScreen(1);
+    datas = JSON.parse(strData);
     menu_title.innerText = "전체 과목 문제 풀기";
     menu.classList.add("all");
     is_exam_type = 0;
@@ -68,11 +71,11 @@ all_exam_btn.addEventListener("click", () => {
 
     setText(exam_count);
     max_exam = exam_count;
-    datas = data;
 })
 // 선택 과목 문제 풀기
 count_exam_btn.addEventListener("click", () => {
     setScreen(1);
+    datas = JSON.parse(strData);
     menu_title.innerText = "선택 과목 문제 풀기";
     menu.classList.remove("all");
     is_exam_type = 1;
@@ -82,7 +85,6 @@ count_exam_btn.addEventListener("click", () => {
 
     setText(exam_count);
     max_exam = exam_count;
-    datas = data;
 })
 
 
