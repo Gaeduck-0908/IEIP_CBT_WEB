@@ -234,7 +234,7 @@ function answer_handler() {
 
             } else {
                 answer_count_box.innerText = `정답 개수 : ${answer_count} / ${count}`;
-                answer_percent_box.innerText = `정답률 : ${(answer_count/count).toFixed(2)*100 + "%"}`;
+                answer_percent_box.innerText = `정답률 : ${((answer_count/count).toFixed(2))*100 + "%"}`;
             }
             setScreen(3);
         }
