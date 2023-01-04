@@ -24,3 +24,4 @@ data = [
 ```
 
 # 스크린샷
+![image](https://user-images.githubusercontent.com/82009667/210569663-e0499bd0-3c6a-49d6-b377-8fedef432c2d.png)
