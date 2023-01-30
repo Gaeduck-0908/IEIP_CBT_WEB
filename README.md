@@ -1,7 +1,8 @@
 # IEIP_CBT_WEB
 # Maker
 ### Web made by . [김찬희](https://github.com/rudnfcks) <br>
-### Data made by . [김태한](https://github.com/Gaeduck-0908)
+### Data made, ETC by . [김태한](https://github.com/Gaeduck-0908) <br>
+### Data made by . [서에녹](https://github.com/Std-Seo)
 
 # 내용
 ### 기존에 있던 [김찬희](https://github.com/rudnfcks/CBT_to_Web) 님의 web CBT 프로젝트를 변형하여<br>
@@ -24,4 +25,4 @@ data = [
 ```
 
 # 스크린샷
-![image](https://user-images.githubusercontent.com/82009667/210569663-e0499bd0-3c6a-49d6-b377-8fedef432c2d.png)
+![image](https://user-images.githubusercontent.com/82009667/215470176-edc0aa3f-5d47-4015-a195-86832de1d823.png)
